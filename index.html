@@ -3,21 +3,91 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>darrina.github.io</title>
+<title>Sluggoworks Consulting</title>
 <style>
-  body { font-family: 'Courier New', monospace; background: #080c18; color: #9fd6ff;
-         display: flex; align-items: center; justify-content: center;
-         height: 100vh; margin: 0; text-align: center; }
-  a { color: #ffd76a; font-size: 1.4em; text-decoration: none; border: 1px solid #ffd76a;
-      padding: 0.6em 1.2em; border-radius: 6px; }
-  a:hover { background: #ffd76a; color: #080c18; }
-  p { color: #5a6b8c; margin-top: 1.5em; font-size: 0.9em; }
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Georgia, 'Times New Roman', serif; line-height: 1.65;
+         color: #1e2a3a; background: #faf8f3; }
+  header { background: #16283f; color: #f5f2ea; padding: 3.5rem 1.5rem 2.5rem; text-align: center; }
+  header h1 { font-size: 2.6rem; letter-spacing: 0.12em; text-transform: uppercase; }
+  header p.tag { margin-top: 0.6rem; color: #c8b98a; font-style: italic; font-size: 1.1rem; }
+  main { max-width: 880px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; }
+  section { margin-bottom: 2.75rem; }
+  h2 { font-size: 1.5rem; color: #16283f; border-bottom: 2px solid #c8b98a;
+       padding-bottom: 0.35rem; margin-bottom: 1rem; }
+  h3 { font-size: 1.12rem; color: #3d5a80; margin: 1.1rem 0 0.35rem; }
+  p { margin-bottom: 0.9rem; }
+  ul { margin: 0.2rem 0 0.9rem 1.4rem; }
+  li { margin-bottom: 0.25rem; }
+  .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0 2rem; }
+  .contact { background: #eef0e6; border: 1px solid #d8dcc8; border-radius: 8px; padding: 1.5rem 1.75rem; }
+  .contact a { color: #3d5a80; }
+  .proj { margin-top: 0.6rem; }
+  .proj a { color: #3d5a80; font-weight: bold; }
+  footer { text-align: center; color: #8a8f98; font-size: 0.85rem; padding: 1.5rem; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #10151d; color: #d7dce3; }
+    h2 { color: #e8e2d2; }
+    h3, .contact a, .proj a { color: #9fc2e8; }
+    .contact { background: #1a2230; border-color: #2c3a52; }
+  }
 </style>
 </head>
 <body>
-<div>
-  <a href="ti-83/">TI-83 Emulator</a>
-  <p>TI-BASIC in the browser — Snake, Pong, Tetris included.</p>
-</div>
+<header>
+  <h1>Sluggoworks</h1>
+  <p class="tag">Sluggoworks Consulting</p>
+</header>
+<main>
+  <section>
+    <p>Sluggoworks has an 18 year track record of designing and implementing enterprise software and solutions. We provide consistent delivery performance that has resulted in sustained year-over-year profitability and growth for our customers. We are our customer's trusted adviser with an attention to detail and a passion to achieve customer business goals through technology innovation and delivery.</p>
+    <p>Sluggoworks can fill all your IT needs: staff augmentation, team mentoring and leadership, mid-level and executive IT management.</p>
+  </section>
+
+  <section>
+    <h2>Industry Experience</h2>
+    <div class="cols">
+      <div><h3>Media</h3><ul><li>Electronic Publishing</li><li>Entertainment</li><li>News and Syndication</li></ul></div>
+      <div><h3>Professional Services</h3><ul><li>Insurance, Legal, Accounting, Medical, Finance</li></ul></div>
+      <div><h3>Directory Services</h3><ul><li>Yellow Pages</li><li>Business Information</li><li>Real Estate</li></ul></div>
+      <div><h3>Retail</h3></div>
+      <div><h3>Manufacturing</h3><ul><li>Automotive</li></ul></div>
+      <div><h3>Enterprise IT</h3><ul><li>Knowledge Management</li><li>eDiscovery</li><li>Business Intelligence</li></ul></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Technical Experience</h2>
+    <h3>Programming</h3>
+    <p>C#/.NET/ASP.NET/.NET Core/ASP.NET Core, JavaScript/Node/Angular/React/Knockout, Java/SpringBoot, Powershell, Python, C/C++, Unix Shell Scripting, PL/SQL, VB, Perl</p>
+    <h3>Data Systems</h3>
+    <p>MySQL, PostgreSQL, Oracle, SQL Server, MongoDB, DynamoDB, Redis</p>
+    <h3>Operating Systems</h3>
+    <p>Linux, Solaris, Windows Server, VMS</p>
+    <h3>Platforms</h3>
+    <p>Azure, AWS, Search/Information Retrieval, Distributed Computing, Content Management</p>
+  </section>
+
+  <section>
+    <h2>Leadership Experience</h2>
+    <div class="cols">
+      <div><h3>Roles</h3><ul><li>Lead Engineer</li><li>Engineering Manager</li><li>Architect</li><li>VP Technology</li></ul></div>
+      <div><h3>Organizations</h3><ul><li>Startup / Small / Mid-size / Enterprise</li></ul></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <p class="proj"><a href="ti-83/">TI-83 Emulator</a> — a TI-BASIC interpreter running in the browser, with Snake, Pong, and Tetris.</p>
+  </section>
+
+  <section class="contact">
+    <h2>Contact us</h2>
+    <p>Email: <a href="mailto:sales@sluggoworks.com">sales@sluggoworks.com</a><br>
+    Phone: (801) 610-6385</p>
+  </section>
+</main>
+<footer>&copy; Sluggoworks Consulting</footer>
 </body>
 </html>
